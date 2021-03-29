@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CSCI39548-Assignment-6/static/css/main.fae3ca44.chunk.css",
+    "main.css": "/CSCI39548-Assignment-6/static/css/main.3a7882bd.chunk.css",
     "main.js": "/CSCI39548-Assignment-6/static/js/main.d36ee8b0.chunk.js",
     "main.js.map": "/CSCI39548-Assignment-6/static/js/main.d36ee8b0.chunk.js.map",
     "runtime-main.js": "/CSCI39548-Assignment-6/static/js/runtime-main.279b15ea.js",
@@ -10,14 +10,14 @@
     "static/js/3.afc7a744.chunk.js": "/CSCI39548-Assignment-6/static/js/3.afc7a744.chunk.js",
     "static/js/3.afc7a744.chunk.js.map": "/CSCI39548-Assignment-6/static/js/3.afc7a744.chunk.js.map",
     "index.html": "/CSCI39548-Assignment-6/index.html",
-    "static/css/main.fae3ca44.chunk.css.map": "/CSCI39548-Assignment-6/static/css/main.fae3ca44.chunk.css.map",
+    "static/css/main.3a7882bd.chunk.css.map": "/CSCI39548-Assignment-6/static/css/main.3a7882bd.chunk.css.map",
     "static/js/2.416efb0b.chunk.js.LICENSE.txt": "/CSCI39548-Assignment-6/static/js/2.416efb0b.chunk.js.LICENSE.txt",
     "static/media/App.css": "/CSCI39548-Assignment-6/static/media/PikPng.com_github-png_2562282.2728a184.png"
   },
   "entrypoints": [
     "static/js/runtime-main.279b15ea.js",
     "static/js/2.416efb0b.chunk.js",
-    "static/css/main.fae3ca44.chunk.css",
+    "static/css/main.3a7882bd.chunk.css",
     "static/js/main.d36ee8b0.chunk.js"
   ]
 }
