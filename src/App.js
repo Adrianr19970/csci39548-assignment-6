@@ -71,10 +71,8 @@ function App() {
       try{
         let response = await axios.get("https://api.lyrics.ovh/v1/"+artist+"/"+title);
         setLyrics(newlineText(response.data.lyrics));
-        console.log(title, artist, response);
       }catch(error){
         if(error.response){
-          console.log("DOG!!");
          console.log(error.response.data);
          setLyrics("No results. Title or Artist may be misspelled.")
         }
@@ -118,16 +116,65 @@ function App() {
         </div>
       </div>
 	);
+}
+
+  {/*---------- weather mini app ---------- */}
+  function WeatherDisplay(){
+    const [weather, setWeather]= useState("");
+    const [city, setCity]= useState("");
+    const [found, setFound]= useState(false);
+
+
+    function cityChange(event){
+      setCity(event.target.value);
+    }
+
+    {/*changes weather state*/}
+    async function weatherChange(){
+      try{
+        let response = await axios.get("https://goweather.herokuapp.com/weather/"+city);
+        setWeather(response.data);
+        setFound(true);
+      }catch(error){
+        if(error.response){
+         console.log(error.response.data);
+         setFound(false)
+        }
+      }
+    }
+
+    return(
+      <div className="App">
+      <div className="weatherheader">
+        <h1>Weather</h1>
+      </div>
+        <div id="display">
+          <div id="searchBar">
+            <label>City </label>
+              <input
+                type = "text"
+                id = "search"
+                onChange = {cityChange}
+              />
+              <button id="searchButton" onClick={weatherChange}>Search</button>
+          </div>
+          <div id="displayInfo">
+            <h3>City: {city}</h3>
+            <h3>Temperature: {weather.temperature}</h3>
+            <h3>Wind: {weather.wind}</h3>
+            <h3>{weather.description}</h3>
+          </div>
+        </div>
+    </div>
+    );
   }
 
-
-
-  
-  
-  {/*all "mini apps" get put into returnArray*/}
-	let returnArray= [GithubDisplay(), LyricsDisplay()];
   return (
-	returnArray
+	<div>
+    <GithubDisplay />
+    <LyricsDisplay/>
+    <WeatherDisplay/>
+  </div>
   );
 }
 

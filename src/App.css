@@ -83,3 +83,18 @@
   color: #fff;
   text-align: center;
 }
+
+/*---Weather CSS --- */
+
+.weatherheader{
+  font-size: 25px;
+  background-color: rgb(240, 205, 10);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+}
+.weatherheader h1 {
+  color: #fff;
+  text-align: center;
+}
