@@ -56,7 +56,7 @@ function App() {
   function LyricsDisplay(){
     const[artist, setArtist]= useState("");
     const[title, setTitle]= useState("");
-    const[lyrics, setLyrics]=useState("No Results");
+    const[lyrics, setLyrics]=useState(<h3>No results</h3>);
 
     function titleChange(event){
       setTitle(event.target.value);
@@ -83,7 +83,7 @@ function App() {
     {/*proper formatting for song, creates array of paragraphs based on where newline characters are 
     (i stole this from https://forum.freecodecamp.org/t/newline-in-react-string-solved/68484)*/}
     function newlineText(text) {
-      const newText = text.split('\n').map(str => <p>{str}</p>);
+      const newText = text.split('\n').map(str => <h3>{str}</h3>);
       return newText;
     }
     
@@ -159,10 +159,14 @@ function App() {
               <button id="searchButton" onClick={weatherChange}>Search</button>
           </div>
           <div id="displayInfo">
+            {found ? 
+            <div>
             <h3>City: {city}</h3>
             <h3>Temperature: {weather.temperature}</h3>
             <h3>Wind: {weather.wind}</h3>
             <h3>{weather.description}</h3>
+            </div>
+            : <h3>No results</h3>}
           </div>
         </div>
     </div>
