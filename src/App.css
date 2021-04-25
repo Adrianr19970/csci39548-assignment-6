@@ -9,10 +9,8 @@
   padding-top: 1px;
   padding-bottom: 1px;
   margin-bottom: 15px;
-
   background-image: url("PikPng.com_github-png_2562282.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .header h1 {
@@ -69,4 +67,49 @@
 
 #displayInfo h3 {
   margin-left: 40px;
+}
+
+
+/*--- Lyrics CSS --- */
+.lyricsheader {
+  font-size: 25px;
+  background-color: rgb(22, 93, 175);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+}
+.lyricsheader h1 {
+  color: #fff;
+  text-align: center;
+}
+
+/*---Weather CSS --- */
+
+.weatherheader{
+  font-size: 25px;
+  background-color: rgb(240, 205, 10);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+}
+.weatherheader h1 {
+  color: #fff;
+  text-align: center;
+}
+
+/*--- COVID Vaccines CSS--- */
+.vaccineHeader{
+  font-size: 25px;
+  background-color: red;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 15px;
+  background-image: url("https://unsplash.com/photos/mAGZNECMcUg");
+  background-repeat: no-repeat;
+}
+.vaccineHeader h1 {
+  color: #fff;
+  text-align: center;
 }
