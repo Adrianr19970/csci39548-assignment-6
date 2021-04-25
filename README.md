@@ -1,3 +1,13 @@
+Link to the deployed page: 
+
+API documentations used:
+GitHub User Search - https://docs.github.com/en/rest/reference/users#get-a-user
+Lyric Search -  https://lyricsovh.docs.apiary.io/#reference/0/lyrics-of-a-song/search
+Weather Search - https://github.com/robertoduessmann/weather-api
+Vaccine Search Implementation - https://github.com/M-Media-Group/Covid-19-API - endpoint: GET /vaccines
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
