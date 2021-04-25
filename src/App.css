@@ -98,3 +98,18 @@
   color: #fff;
   text-align: center;
 }
+
+/*--- COVID Vaccines CSS--- */
+.vaccineHeader{
+  font-size: 25px;
+  background-color: red;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 15px;
+  background-image: url("https://unsplash.com/photos/mAGZNECMcUg");
+  background-repeat: no-repeat;
+}
+.vaccineHeader h1 {
+  color: #fff;
+  text-align: center;
+}
