@@ -1,4 +1,5 @@
 Link to the deployed page: 
+https://adrianr19970.github.io/csci39548-assignment-6/
 
 API documentations used:
 GitHub User Search - https://docs.github.com/en/rest/reference/users#get-a-user
